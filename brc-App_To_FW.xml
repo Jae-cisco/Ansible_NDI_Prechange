@@ -1,0 +1,60 @@
+{
+	"imdata": [{
+		"vzBrCP": {
+			"attributes": {
+				"annotation": "orchestrator:msc-shadow:no",
+				"descr": "",
+				"dn": "uni/tn-ACI-SJC23/brc-App_To_Internet",
+				"intent": "install",
+				"name": "App_To_FW",
+				"nameAlias": "",
+				"ownerKey": "",
+				"ownerTag": "",
+				"prio": "unspecified",
+				"scope": "context",
+				"targetDscp": "unspecified",
+				"userdom": ":all:common:"
+			},
+			"children": [{
+				"vzSubj": {
+					"attributes": {
+						"annotation": "orchestrator:msc-shadow:no",
+						"consMatchT": "None",
+						"descr": "",
+						"name": "Allow_icmp",
+						"nameAlias": "",
+						"prio": "unspecified",
+						"provMatchT": "None",
+						"revFltPorts": "yes",
+						"targetDscp": "unspecified",
+						"userdom": ":all:common:"
+					},
+					"children": [{
+						"vzRsSubjFiltAtt": {
+							"attributes": {
+								"action": "permit",
+								"annotation": "",
+								"directives": "",
+								"priorityOverride": "default",
+								"tnVzFilterName": "Allow_tcp",
+								"userdom": ":all:common:"
+							}
+						}
+					}, {
+						"vzRsSubjFiltAtt": {
+							"attributes": {
+								"action": "permit",
+								"annotation": "",
+								"directives": "",
+								"priorityOverride": "default",
+								"tnVzFilterName": "Allow_icmp",
+								"userdom": ":all:common:"
+							}
+						}
+					}]
+				}
+			}]
+		}
+	}],
+	"totalCount": "1"
+}
