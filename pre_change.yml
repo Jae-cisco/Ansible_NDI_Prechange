@@ -7,7 +7,7 @@
 
   vars:
     nd_login: &nd_login
-      host: "{{ ansible_host }}"
+      host: 173.36.197.104
       username: "{{ username }}"
       password: "{{ password }}"
       validate_certs: False
