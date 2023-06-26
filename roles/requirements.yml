@@ -1,0 +1,3 @@
+collections:
+  - name: https://github.com/CiscoDevNet/ansible-nd.git
+    type: git
