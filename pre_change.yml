@@ -8,8 +8,8 @@
   vars:
     nd_login: &nd_login
       host: "{{ ansible_host }}"
-      username: "{{ ansible_user }}"
-      password: "{{ ansible_ssh_pass }}"
+      username: "{{ username }}"
+      password: "{{ password }}"
       validate_certs: False
       #use_proxy: "{{ ansible_httpapi_use_proxy }}"
     ig_name: SiteGroup-ACI
