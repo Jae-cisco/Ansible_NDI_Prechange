@@ -18,7 +18,7 @@
 
   tasks:
     - name: Create a new Pre-Change Analysis from file
-      nd_pcv:
+      cisco.nd.nd_pcv:
         <<: *nd_login
         ig_name: "{{ ig_name }}"
         site_name: "{{ site_name }}"
